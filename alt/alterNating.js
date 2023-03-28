@@ -14,4 +14,4 @@ String.prototype.toAlternatingCase = function () {
       return char;
     }
   }).join('');
-}
+} 
