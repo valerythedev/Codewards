@@ -5,13 +5,13 @@
 
 String.prototype.toAlternatingCase = function () {
   // Define your method here :)
-    return this.split('').map(function(char) {
-    if (char === char.toUpperCase()) {
-      return char.toLowerCase();
-    } else if (char === char.toLowerCase()) {
-      return char.toUpperCase();
+    return this.split('').map(function(name) {
+    if (name === name.toUpperCase()) {
+      return name.toLowerCase();
+    } else if (name === name.toLowerCase()) {
+      return name.toUpperCase();
     } else {
-      return char;
+      return name;
     }
   }).join('');
-} 
+}   
