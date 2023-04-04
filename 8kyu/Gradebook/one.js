@@ -25,3 +25,6 @@ let averageScore = (s1+s2+s3)/ 3
   }
   return grade
 }
+
+
+console.log(getGrade(60,50,100))
