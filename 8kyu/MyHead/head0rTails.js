@@ -8,9 +8,6 @@
 
 function fixTheMeerkat(arr) {
   //your code here 
-   const lastIndex = arr.length - 1;
-   const temp = arr[lastIndex];
-   arr[lastIndex] = arr[0];
-   arr[0] = temp;
-   return arr;
+  return arr.reverse()
  }
+
