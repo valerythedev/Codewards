@@ -13,6 +13,6 @@ function updateLight(current) {
     case "red":
       return "green";
     default:
-      throw new Error("Invalid traffic light color");
+      throw new Error("Invalid traffic light color")
   }
 } 
