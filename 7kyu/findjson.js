@@ -3,12 +3,12 @@
 // He needs to be able to search for objects in the collection by any of the objects keys and return an array of all the matches.
 
 function getCharacters(obj, key, val) {
-  var foundCharacters = [];
+  let foundCharacters = [];
   // Insert fun here
- Object.keys(obj).forEach(characterKey => {
+  Object.keys(obj).forEach(characterKey => {
     if (typeof obj[characterKey] === 'object') {
       // Recursively search nested objects
-      var nestedMatches = getCharacters(obj[characterKey], key, val);
+      let nestedMatches = getCharacters(obj[characterKey], key, val);
       foundCharacters = foundCharacters.concat(nestedMatches);
     } else {
       if (characterKey.toLowerCase() === key.toLowerCase() && obj[characterKey].toString().toLowerCase() === val.toLowerCase()) {
