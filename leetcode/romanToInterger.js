@@ -14,7 +14,9 @@ D: 500,
 M: 1000
 };
 
+
 let result = 0;
+
 for (let i = 0; i < s.length; i++) {
 const currentNumeral = romanNumerals[s[i]];
 const nextNumeral = romanNumerals[s[i + 1]];
